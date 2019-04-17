@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_nav_graph"
+            app:startDestination="@id/some_fragment">
+
+    <fragment
+        android:id="@+id/some_fragment"
+        android:name="com.kotius.ondestinationchangedlistenerbugexample.MainFragment"
+        android:label="Arguments are null example">
+
+        <argument
+            android:name="some_boolean_arg"
+            app:argType="boolean"
+            android:defaultValue="true"/>
+
+        <argument
+            android:name="some_string_arg"
+            app:argType="string"
+            android:defaultValue="some default value"/>
+
+    </fragment>
+
+</navigation>
